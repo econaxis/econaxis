@@ -27,6 +27,13 @@ For a better video than the GIF, I have a [Youtube video](https://youtu.be/sEx_j
 Userspace context switching, multitasking without threads, or stackful, preemptive multitasking. Implemented with some small inline assembly and register manipulation. Made a fair task scheduler based off the Linux CFS scheduling algorithm.
 Mark-and-sweep garbage collector in C. Implemented using `pycparser` to modify C code, and custom stack frames to find GC roots. 
 
+[**Interactive ontology visualization**](https://github.com/climateMind/climatemind-ontology-visualization) -
+Interactive knowledge graph visualization built using Cytoscape.JS and Python backend. Generated Docker images for easy deployment. 
+
+[**Othello game with AI**](https://github.com/econaxis/othello) -
+An othello game made for my university class. Implemented a minimax AI algorithm with culling. 
+
+
 <!---
 econaxis/econaxis is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
