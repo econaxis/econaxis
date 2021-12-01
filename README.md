@@ -10,7 +10,7 @@
 
 ### Here are some of my projects:
 
-[**JSON database**](https://github.com/econaxis/database) - A fully transactional, ACID database that can store infinite depth JSON objects
+[**JSON database**](https://github.com/econaxis/database) - A fully transactional, ACID database that can store infinite depth JSON objects. Primitive support for replicated transactions using gRPC. 
 
 [**db1**](https://github.com/econaxis/db1) - A second iteration attempt to make a database. A simpler key-value database with static schema, fixed-size tuples, and columnar compression. Built for use by my search engine
 
