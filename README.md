@@ -20,6 +20,9 @@
 
 [**Automatic ATC with A\* pathfinding**](https://github.com/econaxis/atc/) - Routes incoming airplanes to one of two runways while avoiding collisions. Done for a coding assignment. 
 
+[**Beeeeeep**](https://github.com/econaxis/beeeeeep) - Experiments with audio processing and modulation to send and receive binary data over audio at 1kbps. 
+
+
 [**Transit map**](https://github.com/econaxis/transit) - 
 Map visualization of 1000+ Toronto buses travelling in real-time. Uses WebGL and some performance optimizations to do 60FPS rendering of that many buses.
 Source of the topmost GIF.
