@@ -22,6 +22,7 @@
 
 [**Beeeeeep**](https://github.com/econaxis/beeeeeep) - Experiments with audio processing and modulation to send and receive binary data over audio at 1kbps. 
 
+[**Bridge Static Analysis**](https://github.com/econaxis/struss) - Solves forces on bridges and uses random search to minimize cost of bridge.
 
 [**Transit map**](https://github.com/econaxis/transit) - 
 Map visualization of 1000+ Toronto buses travelling in real-time. Uses WebGL and some performance optimizations to do 60FPS rendering of that many buses.
