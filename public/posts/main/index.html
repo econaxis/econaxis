@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Henry Nguyen's Website</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      
+<h1 class="title">
+  Henry Nguyen&#x27;s Portfolio
+</h1>
+<ul>
+<li>👋 Hi, I’m Henry Nguyen</li>
+<li>📚 I'm a computer science student at the University of Waterloo</li>
+<li>👀 I’m interested in databases, graphics, public transit, and maps</li>
+<li>🏢 I'm currently looking for 2024 internships!</li>
+<li>📫 How to reach me: email h99nguye at uwaterloo.ca</li>
+</ul>
+<h1 id="here-are-some-of-my-projects">Here are some of my projects:</h1>
+<img src="/image.png" width="500px" class="first-image" />
+<ul>
+<li><a href="https://map.henryn.xyz"><strong>Interactive travel time map</strong></a> - An interactive travel time map that shows you how far you can go using public transit. </li>
+</ul>
+<img src="/renderer.gif" width="500px">
+<ul>
+<li><a href="https://3d-renderer.netlify.app"><strong>3d renderer</strong></a> - An image buffer, triangle rasterizer, 3d renderer from scratch. Includes shadows, highlights, ambient lighting, and various performance optimizations. Compiled to WASM.</li>
+</ul>
+<p><img src="/ezgif-2-23ab435b8008.gif" alt="video" /></p>
+<ul>
+<li><a href="https://github.com/econaxis/transit"><strong>Transit map</strong></a> - <em>(<a href="https://youtu.be/sEx_jOtT0IM">longer video here</a>)</em> - 
+Map visualization of 1000+ Toronto buses travelling in real-time. Uses WebGL and some performance optimizations to do 60FPS rendering of that many buses.
+For a better video than the GIF, I have a <a href="https://youtu.be/sEx_jOtT0IM">Youtube video</a></li>
+</ul>
+<img src="/search.mp4" width="800px">
+<ul>
+<li>
+<p><a href="https://github.com/econaxis/search"><strong>Full-text search engine</strong></a> - A full-text search engine (like Elasticsearch). Demo includes near-instant textual search of all English Wikibooks articles. Uses <em>db1</em> as the underlying storage engine</p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/coroutines"><strong>Coroutines and garbage collector in C</strong></a> - 
+Userspace context switching, multitasking without threads, or stackful, preemptive multitasking. Implemented with some small inline assembly and register manipulation. Made a fair task scheduler based off the Linux CFS scheduling algorithm.
+Mark-and-sweep garbage collector in C. Implemented using <code>pycparser</code> to modify C code, and custom stack frames to find GC roots. </p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/dns"><strong>Custom DNS Nameserver</strong></a> - Authorative DNS nameserver (based off RFC 1034/1035) from scratch.</p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/database"><strong>JSON database</strong></a> - A fully transactional, ACID database that can store infinite depth JSON objects. Primitive support for replicated transactions using gRPC. </p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/db1"><strong>db1</strong></a> - A second iteration attempt to make a database. A simpler key-value database with static schema, fixed-size tuples, and columnar compression. Built for use by my search engine</p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/atc/"><strong>Automatic ATC with A* pathfinding</strong></a> - Routes incoming airplanes to one of two runways while avoiding collisions. Done for a coding assignment. </p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/beeeeeep"><strong>Beeeeeep</strong></a> - Experiments with audio processing and modulation to send and receive binary data over audio at 1kbps. </p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/struss"><strong>Bridge Static Analysis</strong></a> - Solves forces on bridges and uses random search to minimize cost of bridge.</p>
+</li>
+</ul>
+<img src="/README_image.jpg" width="500px">
+<ul>
+<li>
+<p><a href="https://github.com/climateMind/climatemind-ontology-visualization"><strong>Interactive ontology visualization</strong></a> -
+Interactive knowledge graph visualization built using Cytoscape.JS and Python backend. Generated Docker images for easy deployment. </p>
+</li>
+<li>
+<p><a href="https://github.com/econaxis/othello"><strong>Othello game with AI</strong></a> -
+An othello game made for my university class. Implemented a minimax AI algorithm with culling. </p>
+</li>
+</ul>
+<h1 id="work-related-projects">Work Related Projects</h1>
+<ul>
+<li>
+<p><em>Transify</em> - I forked the open source routing engine Graphhopper (Java) for more accurate isochrones on geometries with sparse intersections and batch shortest-path-tree calculations. Decreased runtime of analyzing Brampton transit accessibility from 32 seconds to 2 seconds. This feature is used by transit planners to determine which areas a bus route serves and calculate demographics such as how many jobs or homes are on the route.</p>
+</li>
+<li>
+<p><em>Transify</em> - I created a realtime map of bus vehicle locations using Node.JS and React, with automated builds and deployments to GKE. This is useful for transit agencies to see at a glance which buses are delayed and need help along a route.</p>
+</li>
+<li>
+<p><em>Dropbase</em> - I built a Pandas-compatible Excel parser optimized for chunked, larger-than-memory reading based off the open source library Calamine. I then built a Python wrapper around the native Rust library, setup automated Github Actions builds, and did extensive testing to make sure the new parser was compliant with Pandas.</p>
+</li>
+<li>
+<p><em>Dropbase</em> - When profiling, I found that <code>dateutil</code> was taking up 99% of our task runtimes. <a href="https://www.kaggle.com/code/kuldeepnpatel/to-datetime-is-too-slow-on-large-dataset">This</a> <a href="https://stackoverflow.com/questions/14163399/convert-list-of-datestrings-to-datetime-very-slow-with-python-strptime">is</a> <a href="https://stackoverflow.com/questions/13468126/a-faster-strptime">a very</a> <a href="https://stackoverflow.com/questions/52480839/slow-pd-to-datetime">common</a> <a href="https://github.com/pandas-dev/pandas/issues/9714">problem</a>. Since Dropbase tries to accept all CSVs and tries to parse them into a structured format, I created an optimize datetime parser for Rust that handles all types of formats with/without timezones. </p>
+</li>
+</ul>
+<h1 id="resume">Resume</h1>
+<p>If you're interested, <a href="/resume.pdf">my resume is also available</a>.</p>
+<!---
+econaxis/econaxis is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+
+
+    </div>
+  </section>
+</body>
+
+</html>
