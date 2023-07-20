@@ -2,32 +2,44 @@
 
 
 
-img {
+img,video {
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 
-img.first-image {
-    margin-top: 0.5rem;
+img,video.first-image {
+    margin-top: 0.4rem;
 }
 
 body {
     margin: auto;
-    max-width: 75rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    max-width: 76rem;
     line-height: 1.5rem;
     font-size: large;
 }
 
 p {
-    margin-top: 1.0rem;
+    margin-top: 1.25rem;
 }
 
 
 html {
     background-color: rgb(239, 239, 239);
     font-family: 'Inconsolata', serif;
+    padding-bottom: 7rem;
 }
 
 h1 {
     margin-top: 2.5rem;
+}
+
+#search-video {
+    margin-top: -22px;
+    margin-bottom: -25px;
+}
+
+.header > ul > li {
+    line-height: 120%;
 }
