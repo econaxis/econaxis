@@ -1,5 +1,7 @@
 {
     "rewrites": [
-      {"source": "/", "destination": "https://henryn.xyz/"}
+      {"source": "/", "destination": "https://henryn.xyz/"},
+      {"source": "/map", "destination": "https://map.henryn.xyz"},
+      {"source": "/map/:match*", "destination": "https://map.henryn.xyz/:match*"}
     ]
   }
