@@ -18,20 +18,43 @@ template="page.html"
 </div>
 
 # Here are some of my projects:
-
 {% card() %}
 
-<img class="up-brightness" src="/image.png" width="600px" />
+<video id="web-map-video" src="/map-web.mov" autoplay muted playsinline></video>
 
-[**Interactive travel time map**](https://map.henryn.xyz) - A map that shows you how far you can go using public transit. Routing done using Rust on GTFS data, and rendering done using Mapbox GL vector tiles
 
-- Front page HackerNews [91 comments]: [https://news.ycombinator.com/item?id=36847960](https://news.ycombinator.com/item?id=36847960)
-- 100+ Github stars: [https://github.com/econaxis/time2reach](https://github.com/econaxis/time2reach)
+[**Network visualization of the web**](https://graph.henryn.ca) - Scraped 50,000 blogs from Resonant.live and displayed them as a graph. There are clusters of sites that all link closely together, with topics like rationality, tech, crypto, Canada, and even postgres!
+
+- Built with WebGL, Typescript, and lots of ChatGPT 🙂
+
+- Some interesting technical challenges I ran into:
+     - when and where to render the URL labels so that they don't clutter up the visualization. Impelementing LOD rendering with.
+     - implementing the "fly to" animation when you search a website (inspired by Mapbox's flyTo animation)
+     - rendering 600k edges and 50k nodes at 120fps in the browser
+
+- Front page HackerNews [55 comments]: [https://news.ycombinator.com/item?id=40136208](https://news.ycombinator.com/item?id=40136208)
 {% end %}
 
 
 {% card() %}
 
+<img class="up-brightness" src="/image.png" width="600px" />
+
+[**Interactive travel time map**](https://map.henryn.ca) - A map that shows you how far you can go using public transit. Routing done using Rust on GTFS data, and rendering done using Mapbox GL vector tiles
+
+- Front page HackerNews [91 comments]: [https://news.ycombinator.com/item?id=36847960](https://news.ycombinator.com/item?id=36847960)
+- 100+ Github stars: [https://github.com/econaxis/time2reach](https://github.com/econaxis/time2reach)
+{% end %}
+
+{% card() %}
+
+[**Resonant.live**](https://resonant.live) - A feed and search engine for high quality articles, built with [Freeman Jiang](https://freemanjiang.ca).
+
+We built a robust scraping infrastructure to scrape over 500k blogs from 40k different domains. We used embeddings to efficiently search through each article and recommend similar articles for users. 
+
+{% end %}
+
+{% card() %}
 <img class="up-brightness" src="/renderer.gif" width="600px">
 
 [**3d renderer**](https://github.com/econaxis/renderer) - [**demo compiled to WASM**](https://3d-renderer.netlify.app) An image buffer, triangle rasterizer, 3d renderer from scratch. Includes shadows, highlights, ambient lighting, and various performance optimizations. Compiled to WASM.
