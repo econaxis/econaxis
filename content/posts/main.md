@@ -11,8 +11,6 @@ template="page.html"
 
  👀 I’m interested in databases, graphics, public transit, and maps
 
- 🏢 I'm currently looking for 2024 internships (January start or May start)
-
  📫 How to reach me: email h99nguye at uwaterloo.ca
 
 </div>
